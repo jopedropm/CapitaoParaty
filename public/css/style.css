@@ -3,8 +3,6 @@
         }
         .hero-bg {
             background-image: url('/public/images/roteiroSul/cutia_upscayl_2x_high-fidelity-4x.png');
-            background-size: cover;
-            background-position: center;
         }
         .card-hover {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
