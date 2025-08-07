@@ -10,70 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .hero-bg {
-            background-image: url('./public/images/roteiroSul/cutia_upscayl_2x_high-fidelity-4x.png');
-            background-size: cover;
-            background-position: 70%;
-        }
-
-        .card-hover {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-
-        /* Estilos para os botões do slider */
-        .slider-btn {
-            background-color: rgba(0, 0, 0, 0.4);
-            color: white;
-            border-radius: 50%;
-            width: 2.5rem;
-            height: 2.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.2s ease;
-        }
-
-        .slider-btn:hover {
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-
-        /* Estilos para os botões flutuantes */
-        .floating-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            opacity: 0.6; /* Opacidade padrão de 60% */
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        }
-
-        /* Aplica opacidade total ao passar o mouse apenas em dispositivos com 'hover' */
-        @media (hover: hover) and (pointer: fine) {
-            .floating-button:hover {
-                transform: scale(1.1);
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-                opacity: 1; /* Opacidade de 100% ao passar o mouse */
-            }
-        }
-
-        /* Nova classe para o estado ativo/foco em dispositivos de toque */
-        .floating-button.active {
-            opacity: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -551,77 +488,7 @@
         </a>
     </div>
 
-    <script>
-        // Script para menu mobile
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Script para rolagem suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                mobileMenu.classList.add('hidden'); // Esconde o menu ao clicar em um link
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ // Correção aqui: scrollInView para scrollIntoView
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Script para os sliders dos roteiros e lanchas
-        document.addEventListener('DOMContentLoaded', () => {
-            const sliders = document.querySelectorAll('[data-slider]');
-
-            sliders.forEach(slider => {
-                const slides = slider.querySelectorAll('.slide');
-                const prevBtn = slider.querySelector('.prev-btn');
-                const nextBtn = slider.querySelector('.next-btn');
-                let currentSlide = 0;
-
-                function showSlide(index) {
-                    slides.forEach((slide, i) => {
-                        slide.classList.toggle('hidden', i !== index);
-                    });
-                }
-
-                prevBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
-                    showSlide(currentSlide);
-                });
-
-                nextBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
-                    showSlide(currentSlide);
-                });
-
-                // Inicializa o slider
-                showSlide(currentSlide);
-            });
-
-            // Script para opacidade dos botões flutuantes em touchscreens
-            const floatingButtons = document.querySelectorAll('.floating-button');
-
-            floatingButtons.forEach(button => {
-                button.addEventListener('touchstart', () => {
-                    button.classList.add('active');
-                });
-
-                button.addEventListener('touchend', () => {
-                    button.classList.remove('active');
-                });
-
-                // Adicionado touchcancel para garantir que a opacidade volte ao normal se o toque for interrompido
-                button.addEventListener('touchcancel', () => {
-                    button.classList.remove('active');
-                });
-            });
-        });
-    </script>
+    <script src="./public/script/script.js"></script>
 
 </body>
 
