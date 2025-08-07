@@ -45,6 +45,33 @@
         .slider-btn:hover {
             background-color: rgba(0, 0, 0, 0.7);
         }
+
+        /* Estilos para os botões flutuantes */
+        .floating-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0.5; /* Opacidade padrão de 50% */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        /* Aplica opacidade total ao passar o mouse apenas em dispositivos com 'hover' */
+        @media (hover: hover) and (pointer: fine) {
+            .floating-button:hover {
+                transform: scale(1.1);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+                opacity: 1; /* Opacidade de 100% ao passar o mouse */
+            }
+        }
+
+        /* Nova classe para o estado ativo/foco em dispositivos de toque */
+        .floating-button.active {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -343,7 +370,7 @@
                             <h3 class="text-xl font-bold text-cyan-800 mb-2">Roteiro Sul: Os Clássicos</h3>
                             <p class="text-gray-600 flex-grow">Explore os cartões postais de Paraty. Um passeio por
                                 águas cristalinas e praias famosas por sua beleza.</p>
-                            <p class="text-sm text-gray-500 mt-4"><strong>Paradas:</strong> Praia vermelha, Ilha da pescaria, Ilha comprida, Praia da Lula, Lagoa azul, Ilha da cotia, Saco da velha, Ilha dos cocos.</p>
+                            <p class="text-sm text-gray-500 mt-4"><strong>Paradas:</strong> Praia Vermelha, Ilha da Pescaria, Ilha Comprida, Praia da Lula, Lagoa Azul, Ilha da Cotia, Saco da Velha, Ilha dos Cocos.</p>
                         </div>
                     </div>
 
@@ -427,7 +454,7 @@
                         <!-- Usando aspect-video para manter proporção 16:9 -->
                         <div class="relative w-full aspect-video z-0">
                             <img src="./public/images/cidade.jpg"
-                                alt="Bússola e mapa" class="w-full h-full object-cover">
+                                alt="Cidade" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold text-cyan-800 mb-2">Monte seu Roteiro</h3>
@@ -464,8 +491,8 @@
                     </a>
                 </div>
 
-                <h2>Local de embarque</h2>
-                <p>(ATENÇÃO! Esta é a localização da marina)</p>
+                <h2>Endereço:</h2>
+                <p>R. Mal. Deodoro, 582 - Centro, Paraty - RJ</p>
                 <a href="https://maps.app.goo.gl/GeKcQbgNAJNEKmns6" target="_blank" class="mt-4 inline-block">
                     <img src="./public/images/mapa.png" alt="Mapa do local de embarque"
                         class="mx-auto border-4 border-white rounded-lg shadow-lg">
@@ -484,6 +511,20 @@
         </div>
     </footer>
 
+    <!-- Botões Flutuantes -->
+    <div class="fixed bottom-6 right-6 flex flex-col space-y-4 z-50">
+        <!-- Botão WhatsApp -->
+        <a href="http://wa.me/5524992121084" target="_blank"
+            class="bg-green-500 text-white floating-button shadow-lg">
+            <img src="./public/images/icons/whatsapp.png" alt="WhatsApp" class="h-8 w-8">
+        </a>
+        <!-- Botão Instagram -->
+        <a href="https://instagram.com/capitaoparaty" target="_blank"
+            class="bg-pink-500 text-white floating-button shadow-lg">
+            <img src="./public/images/icons/instagram.png" alt="Instagram" class="h-8 w-8">
+        </a>
+    </div>
+
     <script>
         // Script para menu mobile
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -498,7 +539,7 @@
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 mobileMenu.classList.add('hidden'); // Esconde o menu ao clicar em um link
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                document.querySelector(this.getAttribute('href')).scrollInView({
                     behavior: 'smooth'
                 });
             });
@@ -534,6 +575,24 @@
 
                 // Inicializa o slider
                 showSlide(currentSlide);
+            });
+
+            // Script para opacidade dos botões flutuantes em touchscreens
+            const floatingButtons = document.querySelectorAll('.floating-button');
+
+            floatingButtons.forEach(button => {
+                button.addEventListener('touchstart', () => {
+                    button.classList.add('active');
+                });
+
+                button.addEventListener('touchend', () => {
+                    button.classList.remove('active');
+                });
+
+                // Adicionado touchcancel para garantir que a opacidade volte ao normal se o toque for interrompido
+                button.addEventListener('touchcancel', () => {
+                    button.classList.remove('active');
+                });
             });
         });
     </script>
