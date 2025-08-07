@@ -85,7 +85,7 @@
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#lanchas" class="text-gray-700 hover:text-cyan-600 transition">Nossas Lanchas</a>
                 <a href="#roteiros" class="text-gray-700 hover:text-cyan-600 transition">Roteiros</a>
-                <a href="#contato"
+                <a href="https://api.whatsapp.com/send?phone=5524992121084&text=Ol%C3%A1%20Capit%C3%A3o%20Paraty!%20Estava%20visitando%20seu%20site%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es!"
                     class="bg-cyan-600 text-white px-5 py-2 rounded-full hover:bg-cyan-700 transition shadow">Reservar
                     Agora</a>
             </nav>
@@ -565,7 +565,7 @@
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 mobileMenu.classList.add('hidden'); // Esconde o menu ao clicar em um link
-                document.querySelector(this.getAttribute('href')).scrollInView({
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ // Correção aqui: scrollInView para scrollIntoView
                     behavior: 'smooth'
                 });
             });
