@@ -54,7 +54,6 @@
     <header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#hero" class="text-2xl font-bold text-cyan-700">Capitão Paraty</a>
-            <!-- A classe 'items-center' foi adicionada aqui para alinhar verticalmente -->
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#lanchas" class="text-gray-700 hover:text-cyan-600 transition">Nossas Lanchas</a>
                 <a href="#roteiros" class="text-gray-700 hover:text-cyan-600 transition">Roteiros</a>
@@ -102,81 +101,189 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                    <!-- Card Lancha 1 -->
-                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
-                        <img src="./public/images/lanchas/sofia.jpg" alt="Lancha Capitão Sofia"
-                            class="w-full h-64 object-cover">
-                        <div class="p-6">
+                    <!-- Card Lancha 1 (Com Slider) -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover h-full flex flex-col">
+                        <!-- Wrapper para o slider - Usando aspect-video para manter proporção 16:9 -->
+                        <div class="relative w-full aspect-video" data-slider>
+                            <!-- Slides -->
+                            <div class="slide absolute inset-0">
+                                <img src="./public/images/lanchas/sofia6.jpg" alt="Lancha Capitão Sofia"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a segunda imagem para a Lancha Sofia aqui -->
+                                <img src="./public/images/lanchas/sofia.jpg"
+                                    alt="Lancha Capitão Sofia 2" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
+                                <img src="./public/images/lanchas/sofiaBanheiro.jpg"
+                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
+                                <img src="./public/images/lanchas/sofiaProa.jpg"
+                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
+                                <img src="./public/images/lanchas/sofiaQuarto.jpg"
+                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
+                                <img src="./public/images/lanchas/sofiaQuarto2.jpg"
+                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
+                                <img src="./public/images/lanchas/SofiaBancos.jpg"
+                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                            </div>
+                            <!-- Botões de navegação do slider -->
+                            <button
+                                class="prev-btn slider-btn absolute top-1/2 left-2 transform -translate-y-1/2 z-10">&#10094;</button>
+                            <button
+                                class="next-btn slider-btn absolute top-1/2 right-2 transform -translate-y-1/2 z-10">&#10095;</button>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
                             <h3 class="text-2xl font-bold text-cyan-700 mb-2">Capitão Sofia</h3>
-                            <p class="text-gray-600 mb-4">Perfeita para famílias e pequenos grupos que buscam conforto e
-                                um dia relaxante no mar.</p>
+                            <p class="text-gray-600 mb-4">Cabinada com quarto e banheiro (fechado), solarium casal na
+                                proa, churrasqueira e ducha de água doce.</p>
                             <div class="flex justify-center space-x-4 text-sm text-gray-700 mb-6">
                                 <span class="flex items-center">
                                     <img src="./public/images/icons/pessoas.svg" class="h-5 w-5 mr-1"
                                         alt="Ícone de pessoas">
-                                    Até 8 pessoas
+                                    Até 7 pessoas
                                 </span>
                                 <span class="flex items-center">
                                     <img src="./public/images/icons/comprimento.svg" class="h-5 w-5 mr-1"
                                         alt="Ícone de pessoas">
-                                    28 pés
+                                    25.5 pés
                                 </span>
+                                <span class="flex items-center">
+                                    <img src="./public/images/icons/motor.svg" class="h-5 w-5 mr-1"
+                                        alt="Ícone de pessoas">
+                                    250 HP 4T
+                                </span>
+
                             </div>
-                            <a href="#contato"
-                                class="bg-gray-200 text-cyan-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-300 transition">Mais
-                                Detalhes</a>
+                            <a href="http://wa.me/5524992121084"
+                                class="bg-gray-200 text-cyan-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-300 transition">Reserve
+                                aqui</a>
                         </div>
                     </div>
 
-                    <!-- Card Lancha 2 -->
-                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
-                        <img src="./public/images/lanchas/enzo.jpg" alt="Lancha Capitão Enzo"
-                            class="w-full h-64 object-cover">
-                        <div class="p-6">
+                    <!-- Card Lancha 2 (Com Slider) -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover h-full flex flex-col">
+                        <!-- Wrapper para o slider - Usando aspect-video para manter proporção 16:9 -->
+                        <div class="relative w-full aspect-video" data-slider>
+                            <!-- Slides -->
+                            <div class="slide absolute inset-0">
+                                <img src="./public/images/lanchas/enzo.jpg" alt="Lancha Capitão Enzo"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a segunda imagem para a Lancha Enzo aqui -->
+                                <img src="./public/images/lanchas/enzo3.jpg"
+                                    alt="Lancha Capitão Enzo 2" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a segunda imagem para a Lancha Enzo aqui -->
+                                <img src="./public/images/lanchas/enzo2.jpg"
+                                    alt="Lancha Capitão Enzo 2" class="w-full h-full object-cover">
+                            </div>
+                            <!-- Botões de navegação do slider -->
+                            <button
+                                class="prev-btn slider-btn absolute top-1/2 left-2 transform -translate-y-1/2 z-10">&#10094;</button>
+                            <button
+                                class="next-btn slider-btn absolute top-1/2 right-2 transform -translate-y-1/2 z-10">&#10095;</button>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
                             <h3 class="text-2xl font-bold text-cyan-700 mb-2">Capitão Enzo</h3>
-                            <p class="text-gray-600 mb-4">Ideal para quem busca agilidade e quer explorar mais roteiros
-                                em um único dia com amigos.</p>
+                            <p class="text-gray-600 mb-4">Ideal para, desde casais até grupos maiores e travessias..</p>
                             <div class="flex justify-center space-x-4 text-sm text-gray-700 mb-6">
                                 <span class="flex items-center">
                                     <img src="./public/images/icons/pessoas.svg" class="h-5 w-5 mr-1"
                                         alt="Ícone de pessoas">
-                                    Até 8 pessoas
+                                    Até 13 pessoas
                                 </span>
                                 <span class="flex items-center">
                                     <img src="./public/images/icons/comprimento.svg" class="h-5 w-5 mr-1"
                                         alt="Ícone de pessoas">
-                                    28 pés
+                                    22.5 pés
+                                </span>
+                                <span class="flex items-center">
+                                    <img src="./public/images/icons/motor.svg" class="h-5 w-5 mr-1"
+                                        alt="Ícone de pessoas">
+                                    100 HP 4T
                                 </span>
                             </div>
-                            <a href="#contato"
-                                class="bg-gray-200 text-cyan-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-300 transition">Mais
-                                Detalhes</a>
+                            <a href="http://wa.me/5524992121084"
+                                class="bg-gray-200 text-cyan-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-300 transition">Reserve
+                                aqui</a>
                         </div>
                     </div>
 
-                    <!-- Card Lancha 3 -->
-                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
-                        <img src="./public/images/lanchas/joao.jpg" alt="Lancha Capitão João"
-                            class="w-full h-64 object-cover">
-                        <div class="p-6">
+                    <!-- Card Lancha 3 (Com Slider) -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover h-full flex flex-col">
+                        <!-- Wrapper para o slider - Usando aspect-video para manter proporção 16:9 -->
+                        <div class="relative w-full aspect-video" data-slider>
+                            <!-- Slides -->
+                            <div class="slide absolute inset-0">
+                                <img src="./public/images/lanchas/joao.jpg" alt="Lancha Capitão João"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a segunda imagem para a Lancha João aqui -->
+                                <img src="./public/images/lanchas/joao2.jpg"
+                                    alt="Lancha Capitão João 2" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a terceira imagem para a Lancha João aqui -->
+                                <img src="./public/images/lanchas/joao3.jpg"
+                                    alt="Lancha Capitão João 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a terceira imagem para a Lancha João aqui -->
+                                <img src="./public/images/lanchas/joaoBanheiro.jpg"
+                                    alt="Lancha Capitão João 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="slide hidden absolute inset-0">
+                                <!-- Adicione a terceira imagem para a Lancha João aqui -->
+                                <img src="./public/images/lanchas/joaoProa.jpg"
+                                    alt="Lancha Capitão João 3" class="w-full h-full object-cover">
+                            </div>
+                            <!-- Botões de navegação do slider -->
+                            <button
+                                class="prev-btn slider-btn absolute top-1/2 left-2 transform -translate-y-1/2 z-10">&#10094;</button>
+                            <button
+                                class="next-btn slider-btn absolute top-1/2 right-2 transform -translate-y-1/2 z-10">&#10095;</button>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
                             <h3 class="text-2xl font-bold text-cyan-700 mb-2">Capitão João</h3>
-                            <p class="text-gray-600 mb-4">A opção premium para grupos maiores, com churrasqueira a bordo
-                                e máximo conforto.</p>
+                            <p class="text-gray-600 mb-4">Banheiro (fechado), aconchegante sofá de proa, churrasqueira e
+                                ducha de água doce. Muito estável e segura por ter 2 cascos (Catamarã) e 2 motores</p>
                             <div class="flex justify-center space-x-4 text-sm text-gray-700 mb-6">
                                 <span class="flex items-center">
                                     <img src="./public/images/icons/pessoas.svg" class="h-5 w-5 mr-1"
                                         alt="Ícone de pessoas">
-                                    Até 8 pessoas
+                                    Até 7 pessoas
                                 </span>
                                 <span class="flex items-center">
                                     <img src="./public/images/icons/comprimento.svg" class="h-5 w-5 mr-1"
                                         alt="Ícone de pessoas">
-                                    28 pés
+                                    18 pés
+                                </span>
+                                <span class="flex items-center">
+                                    <img src="./public/images/icons/motor.svg" class="h-5 w-5 mr-1"
+                                        alt="Ícone de pessoas">
+                                    2x 60 HP 4T
                                 </span>
                             </div>
-                            <a href="#contato"
-                                class="bg-gray-200 text-cyan-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-300 transition">Mais
-                                Detalhes</a>
+                            <a href="http://wa.me/5524992121084"
+                                class="bg-gray-200 text-cyan-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-300 transition">Reserve
+                                aqui</a>
                         </div>
                     </div>
                 </div>
@@ -196,22 +303,23 @@
 
                     <!-- Card Roteiro Sul -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover flex flex-col">
-                        <div class="relative w-full h-56" data-slider>
-                            <div class="slide">
+                        <!-- Usando aspect-video para manter proporção 16:9 -->
+                        <div class="relative w-full aspect-video" data-slider>
+                            <div class="slide absolute inset-0">
                                 <img src="./public/images/roteiroSul/cutia_upscayl_2x_high-fidelity-4x.png"
-                                    alt="Praia Vermelha em Paraty" class="w-full h-56 object-cover">
+                                    alt="Praia Vermelha em Paraty" class="w-full h-full object-cover">
                             </div>
-                            <div class="slide hidden">
+                            <div class="slide hidden absolute inset-0">
                                 <img src="./public/images/roteiroSul/Ilha dos cocos.jpg" alt="Ilha Comprida em Paraty"
-                                    class="w-full h-56 object-cover">
+                                    class="w-full h-full object-cover">
                             </div>
-                            <div class="slide hidden">
+                            <div class="slide hidden absolute inset-0">
                                 <img src="./public/images/roteiroSul/_ilha-comprida.webp" alt="Ilha Comprida em Paraty"
-                                    class="w-full h-56 object-cover">
+                                    class="w-full h-full object-cover">
                             </div>
-                            <div class="slide hidden">
+                            <div class="slide hidden absolute inset-0">
                                 <img src="./public/images/roteiroSul/praia-vermelha.jpg" alt="Ilha Comprida em Paraty"
-                                    class="w-full h-56 object-cover">
+                                    class="w-full h-full object-cover">
                             </div>
 
                             <button
@@ -230,14 +338,15 @@
 
                     <!-- Card Roteiro Norte -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover flex flex-col">
-                        <div class="relative w-full h-56" data-slider>
-                            <div class="slide">
+                        <!-- Usando aspect-video para manter proporção 16:9 -->
+                        <div class="relative w-full aspect-video" data-slider>
+                            <div class="slide absolute inset-0">
                                 <img src="./public/images/roteiroNorte/ilha comprida do norte.jpg"
-                                    alt="Praia deserta em Paraty" class="w-full h-56 object-cover">
+                                    alt="Praia deserta em Paraty" class="w-full h-full object-cover">
                             </div>
-                            <div class="slide hidden">
+                            <div class="slide hidden absolute inset-0">
                                 <img src="./public/images/roteiroNorte/ilha do malvão.jpg" alt="Ilha do Malvão"
-                                    class="w-full h-56 object-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <button
                                 class="prev-btn slider-btn absolute top-1/2 left-2 transform -translate-y-1/2 z-10">&#10094;</button>
@@ -255,14 +364,15 @@
 
                     <!-- Card Roteiro Saco do Mamanguá -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover flex flex-col">
-                        <div class="relative w-full h-56" data-slider>
-                            <div class="slide">
+                        <!-- Usando aspect-video para manter proporção 16:9 -->
+                        <div class="relative w-full aspect-video" data-slider>
+                            <div class="slide absolute inset-0">
                                 <img src="./public/images/mamangua/saco do mamangua.jpg" alt="Saco do Mamanguá"
-                                    class="w-full h-56 object-cover">
+                                    class="w-full h-full object-cover">
                             </div>
-                            <div class="slide hidden">
+                            <div class="slide hidden absolute inset-0">
                                 <img src="./public/images/mamangua/mamangua2.jpg" alt="Vista do Saco do Mamanguá"
-                                    class="w-full h-56 object-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <button
                                 class="prev-btn slider-btn absolute top-1/2 left-2 transform -translate-y-1/2 z-10">&#10094;</button>
@@ -278,14 +388,15 @@
 
                     <!-- Card Roteiro Ilha do Cedro -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover flex flex-col">
-                        <div class="relative w-full h-56 z-0" data-slider>
-                            <div class="slide z-0">
+                        <!-- Usando aspect-video para manter proporção 16:9 -->
+                        <div class="relative w-full aspect-video z-0" data-slider>
+                            <div class="slide z-0 absolute inset-0">
                                 <img src="./public/images/cedro/cedro.png" alt="Praia Vermelha em Paraty"
-                                    class="w-full h-56 object-cover">
+                                    class="w-full h-full object-cover">
                             </div>
-                            <div class="slide hidden z-0">
+                            <div class="slide hidden z-0 absolute inset-0">
                                 <img src="./public/images/cedro/cedro2.png" alt="Ilha Comprida em Paraty"
-                                    class="w-full h-56 object-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <button
                                 class="prev-btn slider-btn absolute top-1/2 left-2 transform -translate-y-1/2 z-10">&#10094;</button>
@@ -302,8 +413,11 @@
 
                     <!-- Card Monte seu Roteiro -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover flex flex-col">
-                        <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=2070&auto=format&fit=crop"
-                            alt="Bússola e mapa" class="w-full h-56 object-cover">
+                        <!-- Usando aspect-video para manter proporção 16:9 -->
+                        <div class="relative w-full aspect-video z-0">
+                            <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=2070&auto=format&fit=crop"
+                                alt="Bússola e mapa" class="w-full h-full object-cover">
+                        </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold text-cyan-800 mb-2">Monte seu Roteiro</h3>
                             <p class="text-gray-600 flex-grow">O passeio é seu! Converse com nosso capitão e crie um
@@ -330,7 +444,7 @@
                     <a href="http://wa.me/5524992121084" target="_blank"
                         class="bg-white text-cyan-800 px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-200 transition-transform transform hover:scale-105 shadow-lg flex items-center">
                         <img src="./public/images/icons/whatsapp.png" class="h-6 w-6 inline-block mr-2">
-                        Reservar pelo WhatsApp
+                        Reserve aqui
                     </a>
                     <a href="https://instagram.com/capitaoparaty" target="_blank"
                         class="bg-white text-pink-600 px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-200 transition-transform transform hover:scale-105 shadow-lg flex items-center">
@@ -339,6 +453,8 @@
                     </a>
                 </div>
 
+                <h2>Local de embarque</h2>
+                <p>(ATENÇÃO! Esta é a localização da marina onde ficam as lanchas e não da Capitão Paraty)</p>
                 <iframe class="mt-10 rounded-lg"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.682197653591!2d-44.716871700000006!3d-23.218249699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9d6d0e58b33509%3A0x710c2792c12eb299!2sQUALKERMAR%20TURISMO%20E%20SERVI%C3%87OS%20N%C3%81UTICO!5e0!3m2!1spt-BR!2sbr!4v1754510019168!5m2!1spt-BR!2sbr"
                     width="80%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
@@ -377,7 +493,7 @@
             });
         });
 
-        // Script para os sliders dos roteiros
+        // Script para os sliders dos roteiros e lanchas
         document.addEventListener('DOMContentLoaded', () => {
             const sliders = document.querySelectorAll('[data-slider]');
 
