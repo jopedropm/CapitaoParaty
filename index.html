@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capitão Paraty - Passeios de Lancha Exclusivos</title>
-    <link rel="shortcut icon" href="./public/images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/images/icons/logo-sem-escrita.svg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,12 @@
     <!-- Cabeçalho -->
     <header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#hero" class="text-2xl font-['Times_New_Roman',serif] font-black text-cyan-700">Capitão Paraty</a>
+            <!-- Modificado: Ajusta o tamanho da fonte e da imagem do logo para dispositivos móveis e adiciona espaço -->
+            <a href="#hero"
+                class="inline-flex items-center text-2xl md:text-3xl font-['Times_New_Roman',serif] font-black text-cyan-700">
+                <img src="./public/images/icons/logo-sem-escrita.svg" class="h-6 md:h-8 mr-1" alt="">
+                <h1>CAPITÃO PARATY</h1>
+            </a>
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#lanchas" class="text-gray-700 hover:text-cyan-600 transition">Nossas Lanchas</a>
                 <a href="#roteiros" class="text-gray-700 hover:text-cyan-600 transition">Roteiros</a>
@@ -62,7 +67,8 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 mt-12">Escolha a Lancha Perfeita</h2>
                 <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Temos a embarcação ideal para seu grupo, combinando
-                    conforto, segurança e estilo. Lanchas com revisões em dia feita pela Direct Boat, a melhor autorizada Mercury.</p>
+                    conforto, segurança e estilo. Lanchas com revisões em dia feita pela Direct Boat, a melhor
+                    autorizada Mercury.</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
@@ -77,33 +83,33 @@
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a segunda imagem para a Lancha Sofia aqui -->
-                                <img src="./public/images/lanchas/sofia.jpg"
-                                    alt="Lancha Capitão Sofia 2" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/sofia.jpg" alt="Lancha Capitão Sofia 2"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
-                                <img src="./public/images/lanchas/sofiaBanheiro.jpg"
-                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/sofiaBanheiro.jpg" alt="Lancha Capitão Sofia 3"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
-                                <img src="./public/images/lanchas/sofiaProa.jpg"
-                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/sofiaProa.jpg" alt="Lancha Capitão Sofia 3"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
-                                <img src="./public/images/lanchas/sofiaQuarto.jpg"
-                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/sofiaQuarto.jpg" alt="Lancha Capitão Sofia 3"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
-                                <img src="./public/images/lanchas/sofiaQuarto2.jpg"
-                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/sofiaQuarto2.jpg" alt="Lancha Capitão Sofia 3"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a terceira imagem para a Lancha Sofia aqui -->
-                                <img src="./public/images/lanchas/SofiaBancos.jpg"
-                                    alt="Lancha Capitão Sofia 3" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/SofiaBancos.jpg" alt="Lancha Capitão Sofia 3"
+                                    class="w-full h-full object-cover">
                             </div>
                             <!-- Botões de navegação do slider -->
                             <button
@@ -112,7 +118,7 @@
                                 class="next-btn slider-btn absolute top-1/2 right-2 transform -translate-y-1/2 z-10">&#10095;</button>
                         </div>
                         <div class="p-6 flex flex-col justify-between flex-grow">
-                            <h3 class="text-2xl font-bold text-cyan-700 mb-2">Capitão Sofia</h3>
+                            <h3 class="text-2xl font-bold text-cyan-700 mb-2">Capitã Sofia</h3>
                             <p class="text-gray-600 mb-4">Cabinada com quarto e banheiro (fechado), solarium casal na
                                 proa, churrasqueira e ducha de água doce.</p>
                             <div class="flex justify-center space-x-4 text-sm text-gray-700 mb-6">
@@ -150,13 +156,13 @@
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a segunda imagem para a Lancha Enzo aqui -->
-                                <img src="./public/images/lanchas/enzo3.jpg"
-                                    alt="Lancha Capitão Enzo 2" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/enzo3.jpg" alt="Lancha Capitão Enzo 2"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a segunda imagem para a Lancha Enzo aqui -->
-                                <img src="./public/images/lanchas/enzo2.jpg"
-                                    alt="Lancha Capitão Enzo 2" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/enzo2.jpg" alt="Lancha Capitão Enzo 2"
+                                    class="w-full h-full object-cover">
                             </div>
                             <!-- Botões de navegação do slider -->
                             <button
@@ -201,23 +207,23 @@
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a segunda imagem para a Lancha João aqui -->
-                                <img src="./public/images/lanchas/joao2.jpg"
-                                    alt="Lancha Capitão João 2" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/joao2.jpg" alt="Lancha Capitão João 2"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a terceira imagem para a Lancha João aqui -->
-                                <img src="./public/images/lanchas/joao3.jpg"
-                                    alt="Lancha Capitão João 3" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/joao3.jpg" alt="Lancha Capitão João 3"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a terceira imagem para a Lancha João aqui -->
-                                <img src="./public/images/lanchas/joaoBanheiro.jpg"
-                                    alt="Lancha Capitão João 3" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/joaoBanheiro.jpg" alt="Lancha Capitão João 3"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <!-- Adicione a terceira imagem para a Lancha João aqui -->
-                                <img src="./public/images/lanchas/joaoProa.jpg"
-                                    alt="Lancha Capitão João 3" class="w-full h-full object-cover">
+                                <img src="./public/images/lanchas/joaoProa.jpg" alt="Lancha Capitão João 3"
+                                    class="w-full h-full object-cover">
                             </div>
                             <!-- Botões de navegação do slider -->
                             <button
@@ -271,8 +277,8 @@
                         <!-- Usando aspect-video para manter proporção 16:9 -->
                         <div class="relative w-full aspect-video" data-slider>
                             <div class="slide absolute inset-0">
-                                <img src="./public/images/roteiroSul/cotia.jpg"
-                                    alt="Praia Vermelha em Paraty" class="w-full h-full object-cover">
+                                <img src="./public/images/roteiroSul/cotia.jpg" alt="Praia Vermelha em Paraty"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="slide hidden absolute inset-0">
                                 <img src="./public/images/roteiroSul/Ilha dos cocos.jpg" alt="Ilha Comprida em Paraty"
@@ -308,7 +314,9 @@
                             <h3 class="text-xl font-bold text-cyan-800 mb-2">Roteiro Sul: Os Clássicos</h3>
                             <p class="text-gray-600 flex-grow">Explore os cartões postais de Paraty. Um passeio por
                                 águas cristalinas e praias famosas por sua beleza.</p>
-                            <p class="text-sm text-gray-500 mt-4"><strong>Paradas:</strong> Praia Vermelha, Ilha da Pescaria, Ilha Comprida, Praia da Lula, Lagoa Azul, Ilha da Cotia, Saco da Velha, Ilha dos Cocos.</p>
+                            <p class="text-sm text-gray-500 mt-4"><strong>Paradas:</strong> Praia Vermelha, Ilha da
+                                Pescaria, Ilha Comprida, Praia da Lula, Lagoa Azul, Ilha da Cotia, Saco da Velha, Ilha
+                                dos Cocos.</p>
                         </div>
                     </div>
 
@@ -337,7 +345,8 @@
                             <h3 class="text-xl font-bold text-cyan-800 mb-2">Roteiro Norte: Refúgios</h3>
                             <p class="text-gray-600 flex-grow">Descubra os tesouros tranquilos e a beleza mais selvagem
                                 da Baía de Paraty, longe das rotas mais movimentadas.</p>
-                            <p class="text-sm text-gray-500 mt-4"><strong>Paradas:</strong> Ilha do Malvão, Ilha Comprida Norte, Ilha da Sapeca, Ilha do Araújo, Ilha do Ventura.</p>
+                            <p class="text-sm text-gray-500 mt-4"><strong>Paradas:</strong> Ilha do Malvão, Ilha
+                                Comprida Norte, Ilha da Sapeca, Ilha do Araújo, Ilha do Ventura.</p>
                         </div>
                     </div>
 
@@ -383,7 +392,9 @@
                             <h3 class="text-xl font-bold text-cyan-800 mb-2">Especial: Saco do Mamanguá</h3>
                             <p class="text-gray-600 flex-grow">Navegue pelo único fiorde tropical do Brasil. Um cenário
                                 de filme com águas calmas, ideal para um dia de paz e contemplação.</p>
-                            <p class="text-sm text-gray-500 mt-4"><strong>Paradas:</strong> Direto ao Saco do Mamanguá, Praia do Buraco, Praia do Sobrado, Praia do Engenho, Praia das Flores, Praia do Crepúsculo, Praia Grande, Praia da Paca, Praia do Guardamor.</p>
+                            <p class="text-sm text-gray-500 mt-4"><strong>Paradas:</strong> Direto ao Saco do Mamanguá,
+                                Praia do Buraco, Praia do Sobrado, Praia do Engenho, Praia das Flores, Praia do
+                                Crepúsculo, Praia Grande, Praia da Paca, Praia do Guardamor.</p>
                         </div>
                     </div>
 
@@ -416,8 +427,7 @@
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover flex flex-col">
                         <!-- Usando aspect-video para manter proporção 16:9 -->
                         <div class="relative w-full aspect-video z-0">
-                            <img src="./public/images/cidade.jpg"
-                                alt="Cidade" class="w-full h-full object-cover">
+                            <img src="./public/images/cidade.jpg" alt="Cidade" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold text-cyan-800 mb-2">Monte seu Roteiro</h3>
@@ -442,7 +452,8 @@
                 <p class="text-cyan-100 mb-8 max-w-2xl mx-auto">Entre em contato, tire suas dúvidas e garanta a data do
                     seu passeio. A aventura dos seus sonhos em Paraty está a uma mensagem de distância.</p>
                 <div class="flex flex-col items-center gap-6 mb-12">
-                    <a href="https://api.whatsapp.com/send?phone=5524992121084&text=Ol%C3%A1%20Capit%C3%A3o%20Paraty!%20Estava%20visitando%20seu%20site%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank"
+                    <a href="https://api.whatsapp.com/send?phone=5524992121084&text=Ol%C3%A1%20Capit%C3%A3o%20Paraty!%20Estava%20visitando%20seu%20site%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es!"
+                        target="_blank"
                         class="bg-white text-cyan-800 px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-200 transition-transform transform hover:scale-105 shadow-lg flex items-center">
                         <img src="./public/images/icons/whatsapp.png" class="h-6 w-6 inline-block mr-2">
                         Reserve aqui
@@ -477,8 +488,8 @@
     <!-- Botões Flutuantes -->
     <div class="fixed bottom-6 right-6 flex flex-col space-y-4 z-50">
         <!-- Botão WhatsApp -->
-        <a href="https://api.whatsapp.com/send?phone=5524992121084&text=Ol%C3%A1%20Capit%C3%A3o%20Paraty!%20Estava%20visitando%20seu%20site%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank"
-            class="bg-green-500 text-white floating-button shadow-lg">
+        <a href="https://api.whatsapp.com/send?phone=5524992121084&text=Ol%C3%A1%20Capit%C3%A3o%20Paraty!%20Estava%20visitando%20seu%20site%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es!"
+            target="_blank" class="bg-green-500 text-white floating-button shadow-lg">
             <img src="./public/images/icons/whatsapp.png" alt="WhatsApp" class="h-8 w-8">
         </a>
         <!-- Botão Instagram -->
