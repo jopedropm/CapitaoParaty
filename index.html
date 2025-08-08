@@ -15,12 +15,6 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .hero-bg {
-            background-image: url('/public/images/roteiroSul/cotia.jpg');
-            background-size: cover;
-            background-position: 70%;
-        }
-
         .card-hover {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
@@ -56,7 +50,8 @@
             height: 60px;
             border-radius: 50%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            opacity: 0.6; /* Opacidade padrão de 60% */
+            opacity: 0.6;
+            /* Opacidade padrão de 60% */
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
 
@@ -65,7 +60,8 @@
             .floating-button:hover {
                 transform: scale(1.1);
                 box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-                opacity: 1; /* Opacidade de 100% ao passar o mouse */
+                opacity: 1;
+                /* Opacidade de 100% ao passar o mouse */
             }
         }
 
@@ -113,7 +109,8 @@
 
     <!-- Seção Herói -->
     <main>
-        <section id="hero" class="hero-bg h-screen flex items-center justify-center text-white text-center">
+        <section id="hero" class="h-screen flex items-center justify-center text-white text-center"
+            style="background-image: url('./public/images/roteiroSul/cotia.jpg'); background-size: cover; background-position: 70%;">
             <div class="container mx-auto px-6">
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in-down">Sua Janela para o
                     Paraíso de Paraty</h1>
@@ -131,7 +128,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 mt-12">Escolha a Lancha Perfeita</h2>
                 <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Temos a embarcação ideal para seu grupo, combinando
                     conforto, segurança e estilo. Lanchas com revisões em dia feita pela Direct Boat, a melhor
-                    autorizada Mercury.</p>
+                    autorizada&nbsp;Mercury.</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
