@@ -1,16 +1,22 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+
         .hero-bg {
-            background-image: url('/public/images/roteiroSul/cutia_upscayl_2x_high-fidelity-4x.png');
+            background-image: url('/public/images/roteiroSul/cotia.jpg');
+            background-size: cover;
+            background-position: 70%;
         }
+
         .card-hover {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
+
         .card-hover:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
+
         /* Estilos para os botões do slider */
         .slider-btn {
             background-color: rgba(0, 0, 0, 0.4);
@@ -23,6 +29,34 @@
             justify-content: center;
             transition: background-color 0.2s ease;
         }
+
         .slider-btn:hover {
             background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Estilos para os botões flutuantes */
+        .floating-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0.6; /* Opacidade padrão de 60% */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        /* Aplica opacidade total ao passar o mouse apenas em dispositivos com 'hover' */
+        @media (hover: hover) and (pointer: fine) {
+            .floating-button:hover {
+                transform: scale(1.1);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+                opacity: 1; /* Opacidade de 100% ao passar o mouse */
+            }
+        }
+
+        /* Nova classe para o estado ativo/foco em dispositivos de toque */
+        .floating-button.active {
+            opacity: 1;
         }
