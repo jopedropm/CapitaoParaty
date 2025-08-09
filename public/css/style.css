@@ -2,12 +2,6 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .hero-bg {
-            background-image: url('/public/images/roteiroSul/cotia.jpg');
-            background-size: cover;
-            background-position: 70%;
-        }
-
         .card-hover {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
@@ -43,7 +37,8 @@
             height: 60px;
             border-radius: 50%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            opacity: 0.6; /* Opacidade padrão de 60% */
+            opacity: 0.6;
+            /* Opacidade padrão de 60% */
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
 
@@ -52,7 +47,8 @@
             .floating-button:hover {
                 transform: scale(1.1);
                 box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-                opacity: 1; /* Opacidade de 100% ao passar o mouse */
+                opacity: 1;
+                /* Opacidade de 100% ao passar o mouse */
             }
         }
 
