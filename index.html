@@ -18,6 +18,7 @@
         .hero-bg {
             background-image: url('./public/images/background.jpg');
             background-size: cover;
+            background-attachment: fixed;
             background-position: 70%;
         }
 
@@ -27,7 +28,7 @@
 
         .card-hover:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            box-shadow: 0 20px 25px (--tw-shadow-color, #00000040), 0 12px 17px (--tw-shadow-color, #00000040);
         }
 
         /* Estilos para os botões do slider */
@@ -169,7 +170,7 @@
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Cabeçalho -->
-    <header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-md">
+    <header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Modificado: Ajusta o tamanho da fonte e da imagem do logo para dispositivos móveis e adiciona espaço -->
             <a href="#hero"
@@ -210,7 +211,7 @@
                 <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Aluguel de lanchas privativas para passeios
                     inesquecíveis pelas ilhas e praias mais deslumbrantes.</p>
                 <a href="#lanchas"
-                    class="bg-cyan-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-transform transform hover:scale-105">Conheça
+                    class="bg-cyan-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-transform transform hover:scale-105 shadow-lg">Conheça
                     Nossas Lanchas</a>
             </div>
         </section>
@@ -591,7 +592,7 @@
                 </div>
                 <div class="text-center mt-12">
                     <a href="http://wa.me/5524992121084" target="whatsapp"
-                        class="bg-cyan-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-transform transform hover:scale-105">Quero
+                        class="bg-cyan-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-transform transform hover:scale-105 shadow-lg">Quero
                         Reservar um Passeio</a>
                 </div>
             </div>
