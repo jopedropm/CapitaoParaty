@@ -875,7 +875,7 @@
     }
 
     .shadow-lg {
-        --tw-shadow: 0 0 20px rgba(1,1,1,0.4), 0 0 20px rgba(1,1,1,0.4);   
+        --tw-shadow: 0 0 20px rgba(1,1,1,0.3), 0 0 20px rgba(1,1,1,0.3);   
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
     }
 
