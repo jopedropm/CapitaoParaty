@@ -5,6 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capitão Paraty - Passeios de Lancha Exclusivos</title>
+    <meta name="description" content="Passeios de lancha exclusivos em Paraty. Explore as ilhas paradisíacas e praias escondidas com conforto e segurança.">
+    <meta name="keywords" content="passeio de lancha, Paraty, ilhas, praias, turismo, aluguel de lancha, Capitão Paraty">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.capitaoparaty.com.br/">
+    <meta property="og:title" content="Capitão Paraty - Passeios de Lancha Exclusivos">
+    <meta property="og:description" content="Passeios de lancha exclusivos em Paraty. Explore as ilhas paradisíacas e praias escondidas com conforto e segurança.">
+    <meta property="og:image" content="https://www.capitaoparaty.com.br/public/images/background.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.capitaoparaty.com.br/">
+    <meta property="twitter:title" content="Capitão Paraty - Passeios de Lancha Exclusivos">
+    <meta property="twitter:description" content="Passeios de lancha exclusivos em Paraty. Explore as ilhas paradisíacas e praias escondidas com conforto e segurança.">
+    <meta property="twitter:image" content="https://www.capitaoparaty.com.br/public/images/background.jpg">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Capitão Paraty - Passeios de Lancha Exclusivos",
+      "description": "Passeios de lancha exclusivos em Paraty. Explore as ilhas paradisíacas e praias escondidas com conforto e segurança.",
+      "url": "https://www.capitaoparaty.com.br/",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Capitão Paraty",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Paraty",
+          "addressRegion": "RJ",
+          "addressCountry": "BR"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+5524992121084",
+          "contactType": "customer service"
+        }
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Paraty",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -23.2196,
+          "longitude": -44.7142
+        }
+      },
+      "serviceType": "Passeios de Lancha",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Roteiros de Passeio",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roteiro Norte",
+              "description": "Explore as ilhas e praias do lado norte de Paraty."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roteiro Sul",
+              "description": "Descubra as belezas do lado sul de Paraty."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17463105488"></script> 
+    <script> 
+      window.dataLayer = window.dataLayer || []; 
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date()); 
+     
+      gtag('config', 'AW-17463105488'); 
+    </script>
+    
     <link rel="shortcut icon" href="./public/images/icons/logo-sem-escrita.svg" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -653,77 +739,7 @@
         </a>
     </div>
 
-    <script src="./public/script/script.js">        
-        // Script para menu mobile
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Script para rolagem suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                mobileMenu.classList.add('hidden'); // Esconde o menu ao clicar em um link
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ // Correção aqui: scrollInView para scrollIntoView
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Script para os sliders dos roteiros e lanchas
-        document.addEventListener('DOMContentLoaded', () => {
-            const sliders = document.querySelectorAll('[data-slider]');
-
-            sliders.forEach(slider => {
-                const slides = slider.querySelectorAll('.slide');
-                const prevBtn = slider.querySelector('.prev-btn');
-                const nextBtn = slider.querySelector('.next-btn');
-                let currentSlide = 0;
-
-                function showSlide(index) {
-                    slides.forEach((slide, i) => {
-                        slide.classList.toggle('hidden', i !== index);
-                    });
-                }
-
-                prevBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
-                    showSlide(currentSlide);
-                });
-
-                nextBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
-                    showSlide(currentSlide);
-                });
-
-                // Inicializa o slider
-                showSlide(currentSlide);
-            });
-
-            // Script para opacidade dos botões flutuantes em touchscreens
-            const floatingButtons = document.querySelectorAll('.floating-button');
-
-            floatingButtons.forEach(button => {
-                button.addEventListener('touchstart', () => {
-                    button.classList.add('active');
-                });
-
-                button.addEventListener('touchend', () => {
-                    button.classList.remove('active');
-                });
-
-                // Adicionado touchcancel para garantir que a opacidade volte ao normal se o toque for interrompido
-                button.addEventListener('touchcancel', () => {
-                    button.classList.remove('active');
-                });
-            });
-        });
-        </script>
+    <script src="./public/script/script.js"></script>
 
 </body>
 
