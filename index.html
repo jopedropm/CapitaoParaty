@@ -94,6 +94,8 @@
 
         gtag('config', 'AW-17463105488'); 
     </script>
+    <!-- Event snippet for WhatsApp (1) conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
         function gtag_report_conversion(url) {
             var callback = function () {
@@ -102,7 +104,9 @@
                 }
             };
             gtag('event', 'conversion', {
-                'send_to': 'AW-17463105488/3X8OCPe-mYcbENCvh4dB',
+                'send_to': 'AW-17463105488/JUSDCICSlYcbENCvh4dB',
+                'value': 1.0,
+                'currency': 'BRL',
                 'event_callback': callback
             });
             return false;
