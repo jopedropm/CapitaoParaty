@@ -3,9 +3,8 @@
         }
 
         .hero-bg {
-            background-image: url("../images/background.jpg");
+            background-image: url("../images/background.webp");
             background-size: cover;
-            background-attachment: fixed;
             background-position: 70%;
         }
 
