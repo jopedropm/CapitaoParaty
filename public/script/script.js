@@ -169,6 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextBtn = slider.querySelector('.next-btn');
         let currentSlide = 0;
 
+        if (!prevBtn || !nextBtn || slides.length === 0) return;
+
         function showSlide(index) {
             slides.forEach((slide, i) => {
                 slide.classList.toggle('hidden', i !== index);
