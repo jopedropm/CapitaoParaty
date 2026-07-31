@@ -167,6 +167,22 @@
 
 <body class="bg-gray-50 text-gray-800">
 
+    <!-- TELA DE AVISO TEMPORÁRIO - Manutenção/Pausa (USANDO CSS INLINE PARA GARANTIR FUNCIONAMENTO) -->
+    <div style="min-height: 100vh; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 24px; background: #3ba6c4; font-family: 'Poppins', sans-serif;">
+        <div style="text-align: center; max-width: 600px;">
+            <img src="./public/images/icons/logo-sem-escrita.svg" style="height: 96px; width: 96px; margin: 0 auto 0px auto; opacity: 0.95;" alt="Capitão Paraty">
+            <h2 style="font-size: 28px; font-weight: 700; color: #ffffff; margin-bottom: 24px; line-height: 1.4;">
+                Estamos pausados para atendimentos no momento, retornaremos em breve.
+            </h2>
+            <p style="font-size: 18px; color: #a5f3fc;">
+                Agradecemos a sua compreensão.
+            </p>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO ORIGINAL DO SITE (OCULTO TEMPORARIAMENTE) -->
+    <div class="site-original-content" style="display: none;">
+
     <!-- Cabeçalho -->
     <header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -790,6 +806,8 @@
                 class="h-8 w-8">
         </a>
     </div>
+
+    </div> <!-- FIM DO CONTEÚDO ORIGINAL DO SITE (OCULTO TEMPORARIAMENTE) -->
 
     <script src="./public/script/script.js"></script>
 
